@@ -66,7 +66,7 @@ while True:
             e = int(input("Ingrese el exponente"))
             print(potencia(b, e))
         case 6:
-            print("Saliendo")
+            print("Saliendo...")
             break
         case _:
             print("Opcion Invalida")
