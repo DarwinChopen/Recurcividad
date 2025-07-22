@@ -2,12 +2,12 @@ from ctypes.wintypes import PLARGE_INTEGER
 
 while True:
     print("Menu Actividad 8")
-    print("Factorial")
-    print("Suma de los primeros n numeros")
-    print("Fibonacci")
-    print("letras")
-    print("Base Exponente")
-    print("Salir")
+    print("1. Factorial")
+    print("2. Suma de los primeros n numeros")
+    print("3. Fibonacci")
+    print("4. letras")
+    print("5. Base Exponente")
+    print("6. Salir")
     try:
         opcion=int(input("Ingrese una Opcion: "))
     except ValueError:
@@ -45,6 +45,16 @@ while True:
             print(fibonacci(numero))
         case 4:
             print("Ejercicio 4")
+            def letras(palabra):
+                if palabra=="":
+                    return 1+letras(palabra)
+                else:
+                    return letras(palabra)
+            frase=input("Ingrese la frase o palabra.").lower()
+            cletra=input("Ingrese la letra que quiere contar").lower()
+            total=letras(frase)
+            print(f"La cantidad de letras es {total}")
+
         case 5:
             print("Ejercicio 5")
             def potencia(base, exponente):
